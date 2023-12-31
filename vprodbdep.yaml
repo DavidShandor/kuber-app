@@ -1,17 +1,17 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: vprodb
-  lables:
+  labels:
     app: vprodb
 spec:
-  selectot:
+  selector:
     matchLabels:
       app: vprodb
   replicas: 1
   template:
     metadata:
-      lables:
+      labels:
         app: vprodb
     spec:
       containers:
